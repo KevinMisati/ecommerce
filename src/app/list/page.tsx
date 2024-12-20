@@ -25,7 +25,9 @@ const page = () => {
       <Filter />
       {/* PRODUCTS */}
       <h1 className="mt-12 text-xl font-semibold">Shoes for you</h1>
-      <ProductList />
+      <ProductList 
+        categoryId={process.env.FEATURED_PRODUCTS_CATEGORY_ID} 
+      />
     </div>
   );
 }
